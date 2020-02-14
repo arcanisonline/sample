@@ -1,0 +1,122 @@
+
+
+.half , summary{
+    font-weight: bold;
+}
+
+#Achivements{
+    
+    text-align: right;
+}
+
+h1,h2{
+        font-variant: small-caps;
+        text-align: center;
+}
+
+h1{
+    color: #FFFFFF;
+}
+
+header,h2{
+	background: #666666;
+	background: linear-gradient(to bottom, #405b71,#648880);
+
+
+}
+
+header{
+    text-align: center;
+    padding: 15px;
+}
+
+body{
+    background: #B3B3B3;
+    background: linear-gradient(to right, #f6f1d3, #648880, #405b71);
+    font-size: 150%;
+    margin: 4%
+}
+
+nav{
+    font-variant: small-caps;
+    font-size: 150%;
+    font-family: Arial, "Times New Roman", serif;
+}
+
+nav a{
+    display: inline-block;
+    width: 22%;
+    background: #ffffff;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    
+    background: grey;
+    color: black;
+}
+
+a:active{
+    border: 1px solid black;
+}
+
+a:visited{
+    color : black;
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+}
+
+details{
+    font-style: italic;
+}
+
+.half{
+    width: 45%;
+    margin-right: 2%;
+    display : inline-block;
+    float: left;
+
+}
+
+progress{
+    display: inline-block;
+    margin-left:3%;
+    float: right;
+}
+
+.whole{
+
+    clear: both;
+}
+
+summary{
+    font-style: normal;
+}
+
+
+#BottomMenu{
+    margin-top: 5%;
+    text-align: center;
+    padding: 15px;
+}
+
+footer{
+    margin-top:5%;
+    clear: both;
+    font-size: 60%;
+    font-style: italic;
+    text-align: right;
+}
+
+img{
+    width: 125px;
+}
+
+.UD{
+    
+    color:#bd0000;
+}
