@@ -1,0 +1,119 @@
+*{
+    border-radius: 9%;
+}
+
+body{
+        
+    background-color: #7cd4f150;
+    display : table-cell;
+    font-family: cursive;
+    margin: 10%
+        
+    background: #00b7ea; /* Old browsers */
+    background: linear-gradient(to right, #f6f1d3, #648880, #405b71);
+    border: 10px solid black;
+    padding: 20px;
+
+}
+
+h1{
+    color: #840000;
+    background-color: #faebd7;
+    border: 5px solid black;
+    box-sizing:border-box;
+    margin: 2%;
+}
+
+h2{
+    color: #9a1500;
+
+}
+
+header{
+    text-align: center;
+    background: #faebd7 ; /* Old browsers */
+    border: 5px solid black;
+    background: -moz-linear-gradient(top, #faebd7 0%, #facb8d 100%);
+	background: -webkit-linear-gradient(#faebd7 0%, #facb8d 100%);
+	background: -o-linear-gradient(#faebd7 0%, #facb8d 100%);
+	background: linear-gradient(#faebd7 0%, #facb8d 100%); 
+}
+
+
+
+section{
+
+    box-sizing: border-box;
+    width: 28%;
+    display: inline-block;
+    margin:2%;
+    border: 10px solid black;
+    padding: 15px;
+    height: 100%;
+    margin-top: 50px;
+    vertical-align: top;
+}
+
+
+ul{
+
+    font-variant:small-caps;
+    line-height: 150%;
+    list-style-type:georgian;
+}
+
+
+footer{
+    
+    box-sizing:border-box;
+    margin: 2%;
+    clear: both;
+    width: 96%;
+    border: 10px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #faebd7;
+    text-align: center;
+
+}
+
+
+a{
+    display: block-inline;
+    font-weight: bold;
+    color:#000000;
+    background: #ff9e1c;
+    text-align: center;
+    padding: 2px;
+    text-decoration :none;
+    margin-left:1%;
+    margin-bottom:5px;
+    width: 100px;
+}
+
+#ExternalLink{
+
+    display: block;
+    font-weight: bold;
+    color:#ffffff;
+    background: #128c7b;
+    width: 200px;
+    text-align: center;
+    padding: 4px;
+    text-decoration :none;
+    margin: 0 auto;
+    margin - top: 10px;
+}
+
+a:hover, a:focus{
+    background: #B3B3B3;
+}
+
+a:active{
+    border: 3px solid #000000;
+}
+
+img{
+    width: 125px;
+}
+
