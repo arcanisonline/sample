@@ -21,6 +21,7 @@ h1{
 header,h2{
 	background: #666666;
 	background: linear-gradient(to bottom, #405b71,#648880);
+	border: 2px solid black;
 
 
 }
