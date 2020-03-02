@@ -7,7 +7,7 @@ function classifySentiment(){
 
     
     answer.getElementsByTagName("p")[0].innerHTML = "You wrote: "+ sentence.value;
-    var sequence = convert_word(sentence.value);
+    var sequence = convert_word(sentence.value.toLowerCase());
     
     var prediction = model.predict(sequence.reshape([1,120]));
     if(prediction.arraySync()[0]>=0.5){
