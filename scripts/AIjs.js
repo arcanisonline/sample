@@ -8,7 +8,7 @@ function classifySentiment(){
     
     answer.getElementsByTagName("p")[0].innerHTML = "You wrote: "+ sentence.value;
     answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: positive";
-    var sequence = convert_word(phrase);
+    var sequence = convert_word(sentence.value);
     
     var prediction = model.predict(sequence.reshape([1,120]));
     alert(prediction.print());
