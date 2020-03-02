@@ -10,7 +10,7 @@ function classifySentiment(){
 
 async function loadModel(){
     
-    const handler = "https://127.0.0.1:8887/model.json";
+    const handler = "https://github.com/arcanisonline/sample/blob/master/model.json";
     const model = await tf.loadLayersModel(handler)
     console.log("LOADED");
 }
