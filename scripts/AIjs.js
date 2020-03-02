@@ -13,7 +13,7 @@ function classifySentiment(){
 
 async function loadModel(){
     
-    await $.getJSON("script/word_index.json", function(json) {
+    await $.getJSON("scripts/word_index.json", function(json) {
     tokenizer = json;
 });
     
