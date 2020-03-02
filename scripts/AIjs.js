@@ -10,11 +10,14 @@ function classifySentiment(){
     var sequence = convert_word(sentence.value);
     
     var prediction = model.predict(sequence.reshape([1,120]));
-    console.log(prediction.print());
-    if(prediction.data()>=0.5)
+    console.log(prediction.data());
+    if(prediction.data()>=0.5){
         answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: positive";
-    else
+    }
+    else{
         answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: negative";
+    }
+
 
 }
 
@@ -29,13 +32,6 @@ async function loadModel(){
 
     model = await tf.loadLayersModel("scripts/model.json");
     console.log(model.summary());
-    
-    var phrase = "I'm very happy about this movie";
-    
-    var sequence = convert_word(phrase);
-    
-    var prediction = model.predict(sequence.reshape([1,120]));
-    console.log(prediction.print());
     
     
 }
