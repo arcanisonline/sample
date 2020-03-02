@@ -22,4 +22,30 @@ async function loadModel(){
 
     model = await tf.loadLayersModel("scripts/model.json");
     console.log(model.summary());
+    
+    var phrase = "I'm very happy about this movie";
+    
+    var sequence = convert_word(phrase);
+    
+    var prediction = model.predict(sequence);
+    console.log(prediction);
+    
+    
 }
+
+function convert_word(word){
+    var words = string.split(" ");
+    var tokenized = [];
+    for(var i = 0; i<words.length; i+=1){
+        
+        tokenized.append(tokenizer[words[i]]);
+    }
+    
+    for(var i = words.length; i<120;i++){
+        
+        tokenized.append(0);
+    }
+    
+    return tf.tensor1d(tokenized);
+}
+
