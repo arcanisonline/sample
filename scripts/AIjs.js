@@ -10,8 +10,8 @@ function classifySentiment(){
     var sequence = convert_word(sentence.value);
     
     var prediction = model.predict(sequence.reshape([1,120]));
-    console.log(prediction.data());
-    if(prediction.data()>=0.5){
+    console.log(prediction.arraySync());
+    if(prediction.arraySync()>=0.5){
         answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: positive";
     }
     else{
