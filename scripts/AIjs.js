@@ -13,7 +13,7 @@ function loadModel(){
     alert("LOADING 3");
 
     const model = tf.loadLayersModel("scripts/model.json");
-    alert("LOADED");
+    console.log(model.summary());
 }
                 
                 
