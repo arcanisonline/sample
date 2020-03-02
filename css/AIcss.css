@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 120%;
+}
+
+
+#sentence_form{
+    text-align: center;
+}
+
+#sentence{
+    width: 60%;
+}
+
+#answer{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 2px solid black;
+}

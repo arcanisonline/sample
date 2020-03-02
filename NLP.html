@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Artificial Intelligence by S.C.</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!--Include Your Style Sheets next -->
+
+    <link rel = "stylesheet" href = "css/AIcss.css">
+    <script src = "scripts/AIjs.js"></script>
+  </head>
+    
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Artificial Intelligence by S.C.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="ROBOTICS.html">Robotics</a></li>
+        <li><a href="CV.html">Computer Vision</a></li>
+        <li class="active"><a href="#">Natural Language Processing</a></li> 
+    
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    
+    
+<body onload = "loadModel()">
+    
+    
+    <h1>Natural Language Processing</h1>
+    <h2>Sentiment classification</h2>
+    <p>This projects is all about sentiment classification. Type your sentence. The classifier will judge the sentiment of what you say.</p>
+    
+
+    <form id="sentence_form" onsubmit="classifySentiment();return false;">
+			<legend>Type your sentence here</legend>
+			<label for ="sentence"></label>
+			<input  type = "text" name = "sentence" id = "sentence" required><br/>
+            <input  type = "submit"  value = "JUDGE!"/>
+
+    </form>
+    
+    
+    <div id="answer">
+    
+        <p>You wrote: </p>
+        <p>Sentiment: </p>
+    
+    </div>
+    
+    
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="scripts/bootstrap.min.js"></script>  
+    <!-- If you don't have the files saved locally, make sure to link it in CodePen, just like you linked the CSS. -->    
+    
+</body>
+</html>
