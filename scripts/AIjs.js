@@ -12,7 +12,7 @@ function loadModel(){
     
     alert("LOADING");
     var myjson;
-    $.getJSON("model.json", function(json){
+    $.getJSON("scripts/model.json", function(json){
     myjson = json;
     });
     
