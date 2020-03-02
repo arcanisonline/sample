@@ -8,7 +8,7 @@ function classifySentiment(){
 
 }
 
-function async loadModel(){
+async function loadModel(){
     
     alert("LOADING 3");
 
