@@ -10,7 +10,7 @@ function classifySentiment(){
 
 function loadModel(){
     
-    alert("LOADING");
+    alert("LOADING 2");
     var myjson;
     $.getJSON("scripts/model.json", function(json){
     myjson = json;
