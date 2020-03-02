@@ -7,12 +7,14 @@ function classifySentiment(){
 
     
     answer.getElementsByTagName("p")[0].innerHTML = "You wrote: "+ sentence.value;
-    answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: positive";
     var sequence = convert_word(sentence.value);
     
     var prediction = model.predict(sequence.reshape([1,120]));
     console.log(prediction.print());
-    alert(prediction.print());
+    if(prediction.data()>=0.5)
+        answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: positive";
+    else
+        answer.getElementsByTagName("p")[1].innerHTML = "Sentiment: negative";
 
 }
 
