@@ -1,3 +1,6 @@
+var model;
+var tokenizer;
+
 function classifySentiment(){
     var sentence = document.getElementById("sentence");
     var answer = document.getElementById("answer");
@@ -12,7 +15,7 @@ async function loadModel(){
     
     alert("LOADING 3");
 
-    const model = await tf.loadLayersModel("scripts/model.json");
+    model = await tf.loadLayersModel("scripts/model.json");
     console.log(model.summary());
 }
                 
