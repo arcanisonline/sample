@@ -10,13 +10,9 @@ function classifySentiment(){
 
 function loadModel(){
     
-    alert("LOADING 2");
-    var myjson;
-    $.getJSON("scripts/model.json", function(json){
-    myjson = json;
-    localStorage.setItem('my_model',myjson);
-    });
-    const model = tf.loadLayersModel('localstorage://my_model');
+    alert("LOADING 3");
+
+    const model = tf.loadLayersModel("scripts/model.json");
     alert("LOADED");
 }
                 
