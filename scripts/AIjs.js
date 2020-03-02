@@ -13,6 +13,11 @@ function classifySentiment(){
 
 async function loadModel(){
     
+        $.getJSON("script/word_index.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+    });
+    
+    
     alert("LOADING 3");
 
     model = await tf.loadLayersModel("scripts/model.json");
