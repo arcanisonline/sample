@@ -8,11 +8,11 @@ function classifySentiment(){
 
 }
 
-function loadModel(){
+function async loadModel(){
     
     alert("LOADING 3");
 
-    const model = tf.loadLayersModel("scripts/model.json");
+    const model = await tf.loadLayersModel("scripts/model.json");
     console.log(model.summary);
 }
                 
