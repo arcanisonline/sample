@@ -13,7 +13,7 @@ function classifySentiment(){
 
 async function loadModel(){
     
-        $.getJSON("script/word_index.json", function(json) {
+        $.getJSON("scripts/word_index.json", function(json) {
     console.log(json); // this will show the info it in firebug console
     });
     
