@@ -11,6 +11,7 @@ function classifySentiment(){
     var sequence = convert_word(sentence.value);
     
     var prediction = model.predict(sequence.reshape([1,120]));
+    console.log(prediction.print());
     alert(prediction.print());
 
 }
