@@ -33,8 +33,8 @@ async function loadModel(){
     
 }
 
-function convert_word(word){
-    var words = string.split(" ");
+function convert_word(phrase){
+    var words = phrase.split(" ");
     var tokenized = [];
     for(var i = 0; i<words.length; i+=1){
         
