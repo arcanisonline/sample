@@ -27,7 +27,7 @@ async function loadModel(){
     
     var sequence = convert_word(phrase);
     
-    var prediction = model.predict(sequence.reshape([,120]));
+    var prediction = model.predict(sequence.reshape([1,120]));
     console.log(prediction);
     
     
