@@ -14,8 +14,9 @@ function loadModel(){
     var myjson;
     $.getJSON("scripts/model.json", function(json){
     myjson = json;
+    localStorage.setItem('my_model',myjson);
     });
-    
+    const model = tf.loadLayersModel('localstorage://my-model');
     alert("LOADED");
 }
                 
