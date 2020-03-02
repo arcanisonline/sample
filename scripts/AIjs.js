@@ -38,12 +38,12 @@ function convert_word(phrase){
     var tokenized = [];
     for(var i = 0; i<words.length; i+=1){
         
-        tokenized.append(tokenizer[words[i]]);
+        tokenized.push(tokenizer[words[i]]);
     }
     
     for(var i = words.length; i<120;i++){
         
-        tokenized.append(0);
+        tokenized.push(0);
     }
     
     return tf.tensor1d(tokenized);
